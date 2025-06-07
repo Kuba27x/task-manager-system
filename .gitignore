@@ -1,0 +1,50 @@
+# Project-wide .gitignore
+
+# MongoDB data files
+*.bson
+*.dump
+/data/db/
+
+# Logs and backups
+/logs/
+/backups/
+*.log
+*.bak
+
+# Environment configuration
+.env
+.env.*
+!.env.example
+
+# Dependency directories
+node_modules/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# IDE specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# User-specific files
+*.userprefs
+*.usertasks
+.history/
+
+# MongoDB collections from project root
+*.json
+!package.json
+!package-lock.json
