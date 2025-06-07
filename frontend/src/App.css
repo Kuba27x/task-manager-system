@@ -1,0 +1,160 @@
+/* Main Styling */
+:root {
+  --primary-color: #3f51b5;
+  --primary-dark: #303f9f;
+  --primary-light: #c5cae9;
+  --secondary-color: #ff4081;
+  --text-color: #212121;
+  --text-secondary: #757575;
+  --background-color: #f5f5f5;
+  --white: #ffffff;
+  --danger: #f44336;
+  --success: #4caf50;
+  --warning: #ff9800;
+  --border-radius: 4px;
+  --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Task List Styling */
+.task-list {
+  margin-top: 1.5rem;
+}
+
+.task-item {
+  border-left: 4px solid var(--primary-color);
+  transition: transform 0.3s ease;
+}
+
+.task-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Status-based coloring */
+.task-pending {
+  border-left-color: var(--warning);
+}
+
+.task-in-progress {
+  border-left-color: var(--primary-color);
+}
+
+.task-completed {
+  border-left-color: var(--success);
+}
+
+/* Priority badges */
+.priority-high {
+  background-color: var(--danger) !important;
+}
+
+.priority-medium {
+  background-color: var(--warning) !important;
+}
+
+.priority-low {
+  background-color: var(--success) !important;
+}
+
+/* Custom Card Styling */
+.card {
+  box-shadow: var(--box-shadow);
+  border: none;
+  border-radius: var(--border-radius);
+}
+
+.card-header {
+  font-weight: 500;
+}
+
+/* Custom Button Styles */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+/* Stats Section */
+.stats-container {
+  padding: 1rem;
+}
+
+/* Dashboard layout */
+.dashboard-container {
+  padding: 1.5rem 0;
+}
+
+/* Form styles */
+.form-control:focus, .form-select:focus {
+  border-color: var(--primary-light);
+  box-shadow: 0 0 0 0.2rem rgba(63, 81, 181, 0.25);
+}
+
+/* Authentication forms */
+.auth-container {
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+/* Navbar styles */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Helper classes */
+.text-danger {
+  color: var(--danger) !important;
+}
+
+.text-success {
+  color: var(--success) !important;
+}
+
+.text-warning {
+  color: var(--warning) !important;
+}
+
+/* Home page styles */
+.hero {
+  padding: 4rem 0;
+  background: linear-gradient(to right, var(--primary-color), var(--primary-dark));
+  color: var(--white);
+}
+
+.feature-card {
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Not Found page */
+.not-found {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
