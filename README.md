@@ -138,6 +138,13 @@ Be sure to create and configure the following files:
 
 ---
 
+## Screenshots
+
+<p align="center">
+  <img src="screenshots/s1.png" alt="Screenshot 1" width="45%" style="display:inline-block; margin-right: 10px;"/>
+  <img src="screenshots/s2.png" alt="Screenshot 2" width="45%" style="display:inline-block;"/>
+</p>
+
 ## License
 
 MIT
